@@ -17,7 +17,7 @@ public class CategoryController {
 
     @GetMapping
     public List<Category> getAllCategories() {
-        return categoryService.findAll();  //// chama o método findAll do service para buscar todas as categorias no banco
+        return categoryService.findAll(); 
     }
     @PostMapping
     public Category saveCategory(@RequestBody Category category) {
